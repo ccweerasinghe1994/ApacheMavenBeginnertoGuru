@@ -87,11 +87,28 @@ mvn compile
 to run the project, run the following command.
 
 ```bash
-mvn exec:java -Dexec.mainClass="com.example.Main"
+mvn exec:java -D"exec.mainClass"="com.example.Main"
 ```
 
 ## 004 Creating a new Maven Project with IntelliJ
 
+![alt text](image-1.png)
+
 ## 005 Assignment - Add StringUtils Dep to Project
 
+add this to pom.xml file.
+
+```xml
+    <dependencies>
+        <dependency>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-lang3</artifactId>
+        <version>3.12.0</version>
+    </dependency>
+```
+
 ## 006 Assignment Review - Add StringUtils Dep to Project
+
+```bash
+mvn compile
+```
