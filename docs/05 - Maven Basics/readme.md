@@ -359,3 +359,11 @@ mvn -N io.takari:maven:wrapper -Dmaven=3.9.6
 ```
 
 ## 010 Maven Archetypes
+
+![alt text](image-24.png)
+
+<https://maven.apache.org/archetypes/maven-archetype-simple/>
+
+```bash
+mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-simple -DarchetypeVersion=1.4
+```
