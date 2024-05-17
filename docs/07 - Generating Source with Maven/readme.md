@@ -88,7 +88,25 @@ by adding this plugin to the `pom.xml` file, we can generate the java classes fr
 
 ## 003 Assignment - Clean JAXB Project Automatically
 
+![alt text](image-1.png)
+
 ## 004 Assignment Review - Clean JAXB Project Automatically
+
+```xml
+            <plugin>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>3.3.2</version>
+                <executions>
+                    <execution>
+                        <id>auto-clean</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>clean</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+```
 
 ## 005 Using Maven to Generate Java Classes from JSON Schema
 
