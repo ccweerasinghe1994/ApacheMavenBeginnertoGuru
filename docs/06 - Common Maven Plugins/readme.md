@@ -194,7 +194,27 @@ maven deploy plugin is used to deploy the project to the remote repository.
 
 ## 009 Maven Site Plugin
 
+maven site plugin is used to generate a site for the project.
+
 ## 010 Maven and Source Control
+
+igignore sample file for maven project.
+
+```.gitignore
+# Maven target directory
+target/
+
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# IntelliJ project files
+.idea/
+*.iml
+*.iws
+*.ipr
+```
 
 ## 011 Other Maven Plugins
 
