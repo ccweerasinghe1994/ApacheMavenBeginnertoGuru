@@ -141,13 +141,56 @@ The `<goal>` tag specifies the goal of the plugin, which is the task it is suppo
 
 ## 004 Maven Compiler Plugin
 
+![alt text](image-10.png)
+
 ## 005 Maven Resources Plugin
+
+![alt text](image-11.png)
+![alt text](image-12.png)
+
+<https://maven.apache.org/plugins/maven-resources-plugin/examples/resource-directory.html>
 
 ## 006 Maven Surefire Plugin
 
+![alt text](image-13.png)
+![alt text](image-14.png)
+![alt text](image-15.png)
+
 ## 007 Maven Jar Plugin
 
+```xml
+            <plugin>![alt text](image-16.png)
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>HelloWorld</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+```
+
+we can add the above code to the pom.xml file to create a jar file with the main class.
+![alt text](image-16.png)
+
 ## 008 Maven Deploy Plugin
+
+maven deploy plugin is used to deploy the project to the remote repository.
+
+```xml
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>3.0.0-M1</version>
+                <configuration>
+                    <altDeploymentRepository>internal.repo::default::file:///${project.build.directory}/mvn-repo</altDeploymentRepository>
+                </configuration>
+            </plugin>
+```
 
 ## 009 Maven Site Plugin
 
